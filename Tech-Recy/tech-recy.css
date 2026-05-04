@@ -1,0 +1,140 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ecfeff;
+    color: #2f4f2f;
+}
+
+header {
+    background: linear-gradient(90deg, #59895b,#00b7c2);
+    padding: 15px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 130px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    transition: 0.3s;
+    position: relative;
+}
+.menu a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #ecfeff;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+.hero {
+    text-align: center;
+    padding: 70px 20px 30px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    color: #59895b;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #333;
+}
+
+
+.mapa {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.mapa img {
+    width: 85%;
+    max-width: 900px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.mapa img:hover {
+    transform: scale(1.02);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+    border-top: 5px solid #00b7c2;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.02);
+}
+
+.card h2 {
+    margin-bottom: 10px;
+    color: #59895b;
+}
+
+.card p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.btn {
+    display: inline-block;
+    background: #00b7c2;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #59895b;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #59895b;
+    color: #ecfeff;
+    margin-top: 40px;
+}
